@@ -4,3 +4,6 @@
 - path: angularjs-seo-article/
   repo: git://github.com/yearofmoo-articles/AngularJS-SEO-Article.git
   keep: false
+- path: angularjs-animation-article/
+  repo: git://github.com/yearofmoo-articles/AngularJS-Testing-Article.git
+  keep: false
