@@ -1,12 +1,26 @@
-# AngularJS - Testing Article
-This is a helper repository which is designed to be used alongside the blog article on yearofmoo.com.
+# AngularJS - Animation Article
 
-## Blog Article
-Click the link below to view the blog article which explains exactly what and how this application is used.
+Run with
+```bash
+# run this from the root of the repo
+npm install http-server
+http-server -p 8000 app/
+```
 
-http://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-testacular.html
+You can then access the website via:
 
-## Demo
-The Application can be demoed via:
+http://localhost:8000/
 
-http://yearofmoo-articles.github.com/angularjs-testing-article/app/
+
+# Blog Article
+
+This article will teach you everything you need to know:
+
+http://www.yearofmoo.com/2013/04/animation-in-angularjs.html
+
+
+# Demo
+
+The application can be demoed via:
+
+http://yearofmoo-articles.github.com/angularjs-animation-article/app/

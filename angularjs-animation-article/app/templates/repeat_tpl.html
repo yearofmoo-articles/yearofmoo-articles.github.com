@@ -1,0 +1,47 @@
+<div>
+  <h2>
+    ngRepeat Animations
+    <div class="pull-right" data-ng-include="'./templates/actions_tpl.html'"></div>
+  </h2>
+  <div data-ng-hide="hidden == true" data-ng-animate="'fade'">
+    <input type="search" data-ng-model="q" data-ng-change="filter(q)" placeholder="filter results..." />
+    <ul class="nav nav-pills pull-right">
+      <li data-ng-class="{active:s=='angularjs'}">
+        <a href="" data-ng-click="search('angularjs')">+ AngularJS</a>
+      </li>
+      <li data-ng-class="{active:s=='javascript'}">
+        <a href="" data-ng-click="search('javascript')">+ JavaScript</a>
+      </li>
+      <li data-ng-class="{active:s=='MVC'}">
+        <a href="" data-ng-click="search('MVC')">+ MVC</a>
+      </li>
+      <li data-ng-class="{active:s=='Apps'}">
+        <a href="" data-ng-click="search('Apps')">+ Apps</a>
+      </li>
+      <li data-ng-class="{active:s=='Animations'}">
+        <a href="" data-ng-click="search('Animations')">+ Animations</a>
+      </li>
+      <li data-ng-class="{active:s=='Programming'}">
+        <a href="" data-ng-click="search('Programming')">+ Programming</a>
+      </li>
+      <li data-ng-class="{active:s==false}">
+        <a href="" data-ng-click="search(false)">No Results</a>
+      </li>
+    </ul>
+    <div class="tweet-records">
+      <div class="no-tweets" data-ng-hide="tweets.length > 0" data-ng-animate="{show: 'repeat-show', hide: 'repeat-hide'}">
+        No Results
+      </div>
+      <div class="tweet-record"
+           data-ng-animate="'repeat'"
+           data-ng-repeat="tweet in tweets">
+        <div class="inner">
+          <a href="" data-ng-click="filter(tweet.id_str)">
+            <img data-ng-src="{{ tweet.profile_image_url }}" />
+            <p data-ng-bind-html-unsafe="tweet.text"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
