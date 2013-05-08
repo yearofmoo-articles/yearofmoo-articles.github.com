@@ -10,31 +10,34 @@ files = [
   './app/lib/app.router.js',
 
   //App-specific Code
-  './app/config/*.js',
   './app/controllers/*.js',
   './app/directives/*.js',
   './app/filters/*.js',
   './app/services/*.js',
+  './app/config/*.js',
   './app/app.js',
 
   //Test-Specific Code
   './node_modules/chai/chai.js',
   './test/lib/chai-should.js',
   './test/lib/chai-expect.js',
-  './test/lib/angular/angular-mocks.js',
+  './vendor/ngMidwayTester/Source/ngMidwayTester.js',
 
   //Test-Specs
-  './test/unit/**/*.js'
+  './test/midway/**/*.js'
 ];
 
-port = 9201;
-runnerPort = 9301;
+
+port = 9202;
+runnerPort = 9302;
 captureTimeout = 5000;
 
-shared = require(__dirname + "/testacular.shared.conf.js").shared
+
+shared = require(__dirname + "/karma.shared.conf.js").shared
 growl     = shared.colors;
 colors    = shared.colors;
 singleRun = shared.singleRun;
 autoWatch = shared.autoWatch;
 browsers  = shared.defaultBrowsers;
 reporters = shared.defaultReporters;
+proxies   = shared.defaultProxies;
