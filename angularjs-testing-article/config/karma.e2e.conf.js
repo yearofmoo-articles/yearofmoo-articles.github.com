@@ -11,7 +11,7 @@ runnerPort = 9303;
 captureTimeout = 5000;
 
 shared = require(__dirname + "/karma.shared.conf.js").shared
-growl     = shared.colors;
+growl     = shared.growl;
 colors    = shared.colors;
 singleRun = shared.singleRun;
 autoWatch = shared.autoWatch;
