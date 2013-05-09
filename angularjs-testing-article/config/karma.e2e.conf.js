@@ -18,5 +18,5 @@ autoWatch = shared.autoWatch;
 browsers  = shared.defaultBrowsers;
 reporters = shared.defaultReporters;
 proxies = {
-  '/': 'http://localhost:8100/'
+  '/app': 'http://localhost:8000'
 };
