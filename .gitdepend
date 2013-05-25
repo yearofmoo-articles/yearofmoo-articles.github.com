@@ -7,3 +7,6 @@
 - path: angularjs-animation-article/
   repo: git://github.com/yearofmoo-articles/AngularJS-Animation-Article.git
   keep: false
+- path: angularjs-2nd-animation-article/
+  repo: git://github.com/matsko/AngularJS-Second-Animation-Article.git
+  keep: false
