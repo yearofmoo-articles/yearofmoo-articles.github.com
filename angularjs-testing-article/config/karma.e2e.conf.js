@@ -10,13 +10,13 @@ port = 9203;
 runnerPort = 9303;
 captureTimeout = 5000;
 
-shared = require(__dirname + "/testacular.shared.conf.js").shared
-growl     = shared.colors;
+shared = require(__dirname + "/karma.shared.conf.js").shared
+growl     = shared.growl;
 colors    = shared.colors;
 singleRun = shared.singleRun;
 autoWatch = shared.autoWatch;
 browsers  = shared.defaultBrowsers;
 reporters = shared.defaultReporters;
 proxies = {
-  '/': 'http://localhost:8100/'
+  '/app': 'http://localhost:8000'
 };
