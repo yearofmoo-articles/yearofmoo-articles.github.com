@@ -31,8 +31,8 @@ port = 9201;
 runnerPort = 9301;
 captureTimeout = 5000;
 
-shared = require(__dirname + "/testacular.shared.conf.js").shared
-growl     = shared.colors;
+shared = require(__dirname + "/karma.shared.conf.js").shared
+growl     = shared.growl;
 colors    = shared.colors;
 singleRun = shared.singleRun;
 autoWatch = shared.autoWatch;
