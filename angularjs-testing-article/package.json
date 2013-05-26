@@ -7,7 +7,7 @@
   },
   "homepage": "https://github.com/yearofmoo/YOM-AngularJS-Testing-Article",
   "dependencies" : {
-    "testacular"  : "canary",
+    "karma"  : "0.8.5",
     "http-server" : "0.5.3",
     "chai"        : "1.4.0"
   }
